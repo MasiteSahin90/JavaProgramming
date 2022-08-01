@@ -6,7 +6,7 @@ public class AmazonInc {
 
         String company = "Amazon Inc";
 
-        ProductOwner po = new ProductOwner("Suhaib", 29, 'M',1,160000, company);
+       // ProductOwner po = new ProductOwner("Suhaib", 29, 'M',1,160000, company);
 
         BusinessAnalyst ba = new BusinessAnalyst("Cihad", 30, 'M', 2, 150000, company);
 
@@ -31,7 +31,7 @@ public class AmazonInc {
         Developer developer5=new Developer("Evelyn", 30, 'F', "JS Developer", 788, 160000, company);
         Developer[] developers={developer1,developer2,developer3,developer4,developer5};
 
-        ScrumTeam scrumTeam = new ScrumTeam(po, ba, sm);
+       // ScrumTeam scrumTeam = new ScrumTeam(po, ba, sm);
 
 
     }
