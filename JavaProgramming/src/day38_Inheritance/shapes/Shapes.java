@@ -2,26 +2,37 @@ package day38_Inheritance.shapes;
 
 public class Shapes {
 
-    public double side ;
-    public static double pi = 3.14;
+    private String name;
 
-    public Shapes(double side) {
-        this.side = side;
+
+    public String getName() {
+        return name;
     }
 
+    public void setName(String name) {
+        if (name == null){
+            System.err.println("name can not be null");
+            System.exit(1);
+        }
+        if (name.isEmpty() || name.isBlank()){
+            System.err.println("enter a shape name");
+            System.exit(1);
+        }
+        this.name = name;
+    }
+
+    public Shapes(String name) {
+        setName(name);
+    }
+
+
     public double area(){
-        System.out.println("Area of the shape is " + area());
-        return area();
+        return 0;
     }
 
     public double perimeter(){
-        System.out.println("Perimeter of the shape is " + perimeter());
-        return perimeter();
+        return 0;
     }
 
-    public String toString() {
-        return "Shapes{" +
-                "side=" + side +
-                '}';
-    }
+
 }
