@@ -35,4 +35,11 @@ public class Shapes {
     }
 
 
+    public String toString() {
+        return "Shapes{" +
+                "name='" + name + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
 }
