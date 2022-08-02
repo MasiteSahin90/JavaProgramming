@@ -26,6 +26,14 @@ public class ShapesObject {
         System.out.println(r);
 
 
+        System.out.println(r.getLength());
+
+        c.setRadius(7);
+        System.out.println(c.getRadius());
+
+        System.out.println(c.getName());
+
+
     }
 
 
