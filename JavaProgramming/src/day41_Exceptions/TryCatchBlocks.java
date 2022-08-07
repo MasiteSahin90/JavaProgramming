@@ -25,8 +25,8 @@ public class TryCatchBlocks {
         try {
             System.out.println(arr[3444]);
         }catch (RuntimeException e){
-            System.out.println("Catch Block");
-            System.out.println("Runtime exception was caugth");
+            e.printStackTrace(); // more prefered
+            //System.out.println(e.getMessage());
         }
 
 
@@ -34,6 +34,18 @@ public class TryCatchBlocks {
 
 
         System.out.println("Test2 completed");
+
+        System.out.println("---------------------------");
+
+        System.out.println("Test3 started");
+
+        try {
+            System.out.println("Cydeo".substring(2,0));
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("Test3 completed");
 
 
 
