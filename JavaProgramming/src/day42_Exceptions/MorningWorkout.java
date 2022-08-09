@@ -8,29 +8,29 @@ public class MorningWorkout {
 
         for (int i = 1; i <= 30; i++) {
             System.out.print("\nPush up " + i);
-            try {
-                Thread.sleep(150);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            sleep(0.3);
         }
         System.out.println();
         System.out.println("---------- Push up completed ----------");
 
         System.out.println("--------------------------------------");
 
-       /* System.out.println("--------Pull up started");
+      System.out.println("--------Pull up started");
 
         for (int i = 1; i <=30 ; i++) {
             System.out.print("\rPull up " + i);
-            try {
-                Thread.sleep(100);
-            }catch (InterruptedException e){
-                e.printStackTrace();
-            }
+            sleep(2.5);
         }
         System.out.println();
         System.out.println("---------- Push up completed ----------");
-    }*/
+    }
+
+
+    public static void sleep(double seconds){
+        try {
+            Thread.sleep((long) (seconds* 1000));
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
