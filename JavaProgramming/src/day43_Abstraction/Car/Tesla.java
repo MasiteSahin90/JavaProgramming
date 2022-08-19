@@ -8,10 +8,10 @@ public final class Tesla extends Car {
 
     @Override
     public void start() {
-        System.out.println(getMake() + getModel() + " is starting");
+        System.out.println(getMake() + getMake() + " is starting");
     }
 
     public void autopilot(){
-        System.out.println(getMake() + getModel() + " has auto pilot feature");
+        System.out.println(getMake() + getMake() + " has auto pilot feature");
     }
 }

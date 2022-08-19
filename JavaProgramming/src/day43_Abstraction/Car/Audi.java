@@ -13,7 +13,7 @@ public final class Audi extends Car {
     }
 
     public void autopark(){
-        System.out.println(getModel() + getMake() + " has auto park features" );
+        System.out.println(getMake() + getMake() + " has auto park features" );
     }
 
 

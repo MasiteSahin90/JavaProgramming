@@ -2,28 +2,28 @@ package day43_Abstraction.Car;
 
 public abstract class Car {
 
-    private final String make , model;
+    private final String brand, make;
     private String color;
     private final int year;
     private double price;
 
-    public Car(String make, String model, String color, int year, double price) {
+    public Car(String brand, String make, String color, int year, double price) {
+        this.brand = brand;
         this.make = make;
-        this.model = model;
         setColor(color);
-        if (year<1886){
-            throw new RuntimeException();
+        if (year < 1886) {
+            throw new RuntimeException("Invalid year: " + year);
         }
         this.year = year;
         setPrice(price);
     }
 
-    public String getMake() {
-        return make;
+    public String getBrand() {
+        return brand;
     }
 
-    public String getModel() {
-        return model;
+    public String getMake() {
+        return make;
     }
 
     public String getColor() {
@@ -40,29 +40,32 @@ public abstract class Car {
 
     public void setColor(String color) {
         this.color = color;
-        if (price<=0){
-            throw new RuntimeException("Invalid price" + price);
-        }
     }
 
     public void setPrice(double price) {
+        if(price <=0){
+            throw new RuntimeException("Invalid price " +price);
+        }
         this.price = price;
     }
 
+    //abstract method: doesnt have a body, wants to be overriden, cant be private
+    //since private cant be overriden, and cant be final, or static
+    public void stop(){
+        System.out.println("Press the break");
+    }
     public abstract void start();
 
-    public void stop(){
-        System.out.println("press the breke");
-    }
-
+    //hash code when creating an object if you dont have it
     @Override
     public String toString() {
         return "Car{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
+                "brand='" + brand + '\'' +
+                ", model='" + make + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
                 ", price=" + price +
                 '}';
     }
+
 }
