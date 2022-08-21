@@ -1,4 +1,4 @@
-package day43_Abstraction.Shape;
+package day45_Interface.Shape;
 
 public abstract class Shape {
 
@@ -12,15 +12,13 @@ public abstract class Shape {
         return name;
     }
 
-
     public abstract double area();
     public abstract double perimeter();
-    @Override
+
     public String toString() {
-        return "Shape{" +
+        return
                 "name='" + name + '\'' +
                 ", area='" + area() + '\'' +
-                ", perimeter='" + perimeter() + '\'' +
-                '}';
+                ", perimeter='" + perimeter() + '\'';
     }
 }
