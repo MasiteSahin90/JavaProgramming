@@ -11,6 +11,10 @@ public class Dog extends Animal implements barks, friendly,Fly{
         System.out.println(getName() + " is eating pizza");
     }
 
+    @Override
+    public void bark() {
+        System.out.println(getName() + " is barking");
+    }
 
     @Override
     public void fly() {
