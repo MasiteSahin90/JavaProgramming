@@ -11,37 +11,37 @@ public class InheritanceReview {
 
     }
 
-class A extends InheritanceReview{
+ class A extends InheritanceReview{
     public A(int a) {
         super(a);
     }
 }
 
 
-class B extends InheritanceReview{
+ class B extends InheritanceReview{
     public B(int a) {
         super(a);
     }
 }
 
-class C extends InheritanceReview{
+ class C extends InheritanceReview{
     public C(int a) {
         super(a);
     }
 }
-class Aa extends A{
+ class Aa extends A{
     public Aa(int a) {
         super(a);
     }
 }
 
-class Bb extends B{
+ class Bb extends B{
     public Bb(int a) {
         super(a);
     }
 }
 
-class Cc extends C{
+ class Cc extends C{
 
     public Cc(int a) {
         super(a);
